@@ -1,9 +1,13 @@
+let navbarOptions = document.querySelector(".navbar").getElementsByTagName("a")
+let navBar = document.querySelector(".nav-2");
+let logoSite = document.querySelector(".logo-nav")
+
+
 document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         console.log(window.scrollX)
         let Xscroll = window.scrollX;
         let Yscroll = window.scrollY;
-        console.log(Yscroll)
         if (Yscroll >= 550) {
             console.log("Limit reached")
             navBar.style.display = "flex";
