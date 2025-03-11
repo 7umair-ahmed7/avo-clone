@@ -703,7 +703,8 @@
     align-items: center;
     justify-content: center;
 }
-.work-section .change-btns .active{
+
+.work-section .change-btns .active {
 
     background: #D1002C;
     color: white;
@@ -990,9 +991,9 @@ footer::before {
     position: absolute;
     width: 65%;
     height: 125px;
-    top: -59px;
+    top: -64px;
     left: 0;
-    background: white;
+    background: #f3f3f3;
     transform: skewY(8deg);
 }
 
@@ -1001,10 +1002,10 @@ footer::after {
     content: "";
     width: 42%;
     height: 125px;
-    top: -58px;
-    right: -86px;
-    background: white;
-    transform: skewY(-12deg);
+    top: -74px;
+    right: 0;
+    background: #f3f3f3;
+    transform: skewY(-15deg);
 }
 
 footer {
@@ -1117,4 +1118,233 @@ footer .copyright img {
     width: 16px;
     height: 16px;
     margin: 0 4px;
+}
+
+@media screen and (max-width:995px) {
+
+    .nav-2 {
+        width: 113%;
+        overflow-x: hidden;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .upper-portion {
+        padding: 0;
+        box-sizing: content-box;
+        width: 100%;
+        overflow-x: hidden;
+        width: 113%;
+    }
+
+    .about-us-section {
+        padding: 150px 10px;
+        overflow-x: hidden;
+        width: 113%;
+    }
+
+    .upper-portion .inner-content-upper {
+        margin: 20px;
+    }
+
+    .upper-portion .inner-content-upper .left h1 {
+        font-size: 30px;
+    }
+
+    .upper-portion nav {
+        background: black;
+        padding: 15px;
+    }
+
+    .work-section {
+        padding: 150px 0;
+        overflow-x: hidden;
+        width: 113%;
+    }
+
+    .comments {
+        padding: 150px 20px;
+        overflow-x: hidden;
+        width: 113%;
+    }
+
+    .comments .comments-lower-bg>div {
+        width: 55%;
+    }
+
+    .blogs-section {
+        padding: 150px 20px;
+        overflow-x: hidden;
+        width: 113%;
+    }
+
+    footer {
+        padding: 250px 20px;
+        overflow-x: hidden;
+        width: 113%;
+    }
+
+
+}
+
+@media screen and (max-width:765px) {
+    .upper-portion .inner-content-upper {
+        flex-direction: column;
+    }
+
+    .upper-portion .inner-content-upper .right {
+        order: 1;
+        text-align: left;
+        width: 40%;
+
+    }
+
+    .upper-portion .inner-content-upper .right h1 {
+        border-left: 5px solid #D1002C;
+        border-right: 0;
+    }
+
+    .upper-portion .inner-content-upper .left {
+        width: 70%;
+        order: 2;
+    }
+
+    .upper-portion .inner-content-upper .left h1 {
+        font-size: 26px;
+        text-transform: capitalize;
+    }
+
+    .about-us-section .services {
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .about-us-section .lower-about {
+        flex-direction: column;
+    }
+
+    .about-us-section .lower-about .left-content {
+        order: 2;
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-us-section .lower-about .right-content {
+        order: 3;
+        width: 100%;
+    }
+
+    .about-us-section .lower-about .lower-about-img {
+        order: 1;
+        width: 100%;
+    }
+
+    .about-us-section .last-about {
+        flex-direction: column;
+
+    }
+
+    .about-us-section .last-about .in-last-about {
+        width: 100%;
+
+
+    }
+
+    .about-us-section .last-about .in-last-about .about-desc-title {
+        align-items: start;
+
+    }
+
+
+    .work-section>div {
+        margin-top: 30px;
+    }
+
+    .work-section .card-one,
+    .work-section .card-two {
+        flex-direction: column;
+    }
+
+    .work-section .card-one,
+    .work-section .card-two {
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .work-section .card-two .content {
+        order: 2;
+    }
+
+    .work-section .card-two .work-img {
+        order: 1;
+    }
+
+    .comments .comments-cards {
+        flex-direction: column;
+    }
+
+    .blogs-section .blog-cards {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .blogs-section .blog-cards .blog-card {
+        width: 100%;
+
+    }
+
+    .blogs-section .blog-cards .blog-card .blog-card-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footer>div {
+        width: 66%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .about-us-section::after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 125px;
+        bottom: -74px;
+        right: -64px;
+        background: white;
+        transform: skewY(-15deg);
+    }
+
+    .nav-2 ul,
+    .upper-portion nav ul {
+        gap: 20px;
+    }
+
+    .nav-2,
+    .upper-portion,
+    .about-us-section,
+    .work-section,
+    .comments,
+    .blogs-section,
+    footer {
+        width: 117%;
+    }
+
+    footer {
+        height: 250vh;
+    }
+}
+
+@media screen and (max-width:390px) {
+    footer {
+        height: 270vh;
+    }
+
 }

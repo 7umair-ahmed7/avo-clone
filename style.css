@@ -885,10 +885,10 @@
 footer::before {
     content: "";
     position: absolute;
-    width: 70%;
+    width: 65%;
     height: 125px;
-    top: -59px;
-    left: -35px;
+    top: -64px;
+    left: 0;
     background: #f3f3f3;
     transform: skewY(8deg);
 }
@@ -898,8 +898,8 @@ footer::after {
     content: "";
     width: 42%;
     height: 125px;
-    top: -67px;
-    right: -101px;
+    top: -74px;
+    right: 0;
     background: #f3f3f3;
     transform: skewY(-15deg);
 }
@@ -913,6 +913,7 @@ footer {
     position: relative;
     width: 100%;
     overflow: hidden;
+
 }
 
 .footer {
@@ -1075,7 +1076,7 @@ footer .copyright img {
     }
 
     footer {
-        padding: 0;
+        padding: 250px 20px;
         overflow-x: hidden;
         width: 113%;
     }
@@ -1204,4 +1205,42 @@ footer .copyright img {
     .footer>div {
         width: 66%;
     }
+}
+
+@media screen and (max-width:450px) {
+    .about-us-section::after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 125px;
+        bottom: -74px;
+        right: -64px;
+        background: white;
+        transform: skewY(-15deg);
+    }
+
+    .nav-2 ul,
+    .upper-portion nav ul {
+        gap: 20px;
+    }
+
+    .nav-2,
+    .upper-portion,
+    .about-us-section,
+    .work-section,
+    .comments,
+    .blogs-section,
+    footer {
+        width: 117%;
+    }
+
+    footer {
+        height: 250vh;
+    }
+}
+@media screen and (max-width:390px){
+    footer {
+        height: 270vh;
+    }
+
 }
