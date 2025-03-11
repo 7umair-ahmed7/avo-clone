@@ -1206,6 +1206,11 @@ footer .copyright img {
         width: 66%;
     }
 }
+@media screen and (max-width:600px){
+    .comments .comments-lower-bg>div{
+        width: 100%;
+    }
+}
 
 @media screen and (max-width:450px) {
     .about-us-section::after {

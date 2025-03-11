@@ -284,7 +284,10 @@
 
 .contact-section {
     padding: 50px 120px;
-    margin: 100px;
+    margin:80px 0 80px 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-section .contact-description {
@@ -377,7 +380,7 @@
     padding: 15px 10px;
     border: 0;
     border-radius: 6px;
-    width: 30%;
+    width: 109px;
     cursor: pointer;
 }
 
@@ -387,6 +390,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 30px;
 }
 
 .contact-section .contain-left-right .right .item {
@@ -1187,6 +1191,29 @@ footer .copyright img {
 
 }
 
+@media screen and (max-width:965px) {
+    .contact-section{
+        padding:60px  30px;
+       
+        margin:80px 0 80px 80px ;
+    }
+    .contact-section .contain-left-right {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .contact-section .contain-left-right .right {
+        width: 100%;
+
+    }
+
+    .contact-section .contain-left-right .left {
+        width: 100%;
+
+    }
+}
+
 @media screen and (max-width:765px) {
     .upper-portion .inner-content-upper {
         flex-direction: column;
@@ -1311,7 +1338,7 @@ footer .copyright img {
 }
 
 @media screen and (max-width:450px) {
-    .about-us-section::after {
+    .contact-section::after {
         position: absolute;
         content: "";
         width: 80%;

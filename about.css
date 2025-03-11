@@ -726,11 +726,11 @@
 .comments .comments-cards {
     display: flex;
     justify-content: space-around;
-
+    gap: 20px;
 }
 
 .comments .comments-cards .comment-card {
-    width: 30%;
+    width: 400px;
     background-color: #f3f3f3;
     padding: 20px;
     border-radius: 4px;
@@ -1252,6 +1252,7 @@ footer .copyright img {
 
     .comments .comments-cards {
         flex-direction: column;
+        align-items: center;
     }
 
     .blogs-section .blog-cards {
@@ -1310,9 +1311,15 @@ footer .copyright img {
         height: 250vh;
     }
 }
-@media screen and (max-width:390px){
+
+@media screen and (max-width:390px) {
     footer {
         height: 270vh;
     }
 
+}
+@media screen and (max-width:600px){
+    .comments-lower-bg>div{
+        width: 100%;
+    }
 }
