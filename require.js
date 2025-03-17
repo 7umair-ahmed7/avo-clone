@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(window.scrollX)
         let Xscroll = window.scrollX;
         let Yscroll = window.scrollY;
-        if (Yscroll >= 550) {
+        if (Yscroll >= 950) {
             console.log("Limit reached")
             navBar.style.display = "flex";
         }
-        if (Yscroll < 550) {
+        if (Yscroll < 950) {
             navBar.style.display = "none";
 
         }
